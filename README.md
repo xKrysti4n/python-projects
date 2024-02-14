@@ -15,9 +15,10 @@
 
 ###
 
+
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/xKrysti4n/xKrysti4n/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/xKrysti4n/python-projects/output/snake.svg" alt="Snake animation" />
 
 ###
 
