@@ -61,7 +61,7 @@ data = [
     },
     {
         'name': 'National Geographic',
-        'follower_count': 135,
+        'follower_count': 136,
         'description': 'Magazine',
         'country': 'United States'
     },
