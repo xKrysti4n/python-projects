@@ -1,4 +1,4 @@
-from operator import is_
+# Description: A simple coffee machine program that takes user input and returns a coffee based on the input.
 from menu import MENU, resources
 
 def calculate_cost(drink_name):
