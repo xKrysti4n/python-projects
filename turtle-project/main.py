@@ -1,23 +1,35 @@
 import random
-from turtle import Turtle, Screen
+import colorgram
+from turtle import Turtle, Screen, color
+count = 0
 t = Turtle()
-Screen().bgcolor("black")
+t.hideturtle()
+t.width(15)
+t.speed("fast")
+colors = colorgram.extract('pic.png', 27)
+t.pu()
+t.goto(-75,200)
+t.pd()
 Screen().colormode(255)
-def random_color():
-    r = random.randint(0,255)
-    g = random.randint(0,255)
-    b = random.randint(0,255)
-    random_color = (r,g,b)
-    return random_color
+for i in colors:
+    if count == 3:
+        t.pu()
+        t.right(180)
+        t.fd(150)
+        t.left(90)
+        t.fd(50)
+        t.left(90)
+        t.pd()
+        count =0 
+    r =i.rgb[0]
+    g =i.rgb[1]
+    b =i.rgb[2]
+    t.color(r,g,b)
+    t.dot(25)
+    t.pu()
+    t.fd(50)
+    t.pd()
+    count+=1
 
 
-t.width(2)
-t.speed("fastest")
-def draw_spirograph(size_of_gap):       
-    for _ in range(int(360 / size_of_gap)):
-        t.color(random_color())
-        t.circle(100)
-        t.setheading(t.heading()+size_of_gap)
-
-draw_spirograph(2)
 Screen().exitonclick()
