@@ -8,7 +8,7 @@ t.width(15)
 t.speed("fast")
 colors = colorgram.extract('pic.png', 27)
 t.pu()
-t.goto(-75,200)
+t.goto(-75,250)
 t.pd()
 Screen().colormode(255)
 for i in colors:
